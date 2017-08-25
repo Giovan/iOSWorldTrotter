@@ -40,7 +40,6 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         let date = NSDate()
         
         let timeFormatter = DateFormatter()
-        timeFormatter.locale = Locale(identifier: "es_MX")
         //Get the hour completly Hour - Minutes - Seconds - Miliseconds
         //timeFormatter.dateFormat = "HH:mm:ss.S"
         timeFormatter.dateFormat = "HH"
