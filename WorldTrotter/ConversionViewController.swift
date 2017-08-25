@@ -34,6 +34,32 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         textField.delegate = self
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        let date = NSDate()
+        
+        let timeFormatter = DateFormatter()
+        timeFormatter.locale = Locale(identifier: "es_MX")
+        //Get the hour completly Hour - Minutes - Seconds - Miliseconds
+        //timeFormatter.dateFormat = "HH:mm:ss.S"
+        timeFormatter.dateFormat = "HH"
+        
+        guard
+            let actualTimeHour = Int(timeFormatter.string(from: date as Date))
+        else{
+            print("Error al obetener la hora")
+            return
+        }
+        
+        print("Actual Hour: \(actualTimeHour)")
+        if actualTimeHour >= 19 {
+            self.view.backgroundColor = UIColor.black.withAlphaComponent(1.0)
+        } else {
+            self.view.backgroundColor = UIColor.gray.withAlphaComponent(0.2)
+        }
+    }
+    
     let numberFormatter: NumberFormatter = {
         let nf = NumberFormatter()
         nf.numberStyle = .decimal
