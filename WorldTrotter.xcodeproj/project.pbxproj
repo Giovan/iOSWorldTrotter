@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		859EB5211F4F35E900F17A06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859EB5201F4F35E900F17A06 /* AppDelegate.swift */; };
-		859EB5231F4F35E900F17A06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859EB5221F4F35E900F17A06 /* ViewController.swift */; };
 		859EB5261F4F35E900F17A06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859EB5241F4F35E900F17A06 /* Main.storyboard */; };
 		859EB5281F4F35E900F17A06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 859EB5271F4F35E900F17A06 /* Assets.xcassets */; };
 		859EB52B1F4F35E900F17A06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859EB5291F4F35E900F17A06 /* LaunchScreen.storyboard */; };
 		859EB5361F4F35E900F17A06 /* WorldTrotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859EB5351F4F35E900F17A06 /* WorldTrotterTests.swift */; };
 		859EB5411F4F35E900F17A06 /* WorldTrotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859EB5401F4F35E900F17A06 /* WorldTrotterUITests.swift */; };
+		859EB5551F4F5C2A00F17A06 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859EB5541F4F5C2A00F17A06 /* ConversionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		859EB51D1F4F35E900F17A06 /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		859EB5201F4F35E900F17A06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		859EB5221F4F35E900F17A06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		859EB5251F4F35E900F17A06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		859EB5271F4F35E900F17A06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		859EB52A1F4F35E900F17A06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		859EB53C1F4F35E900F17A06 /* WorldTrotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldTrotterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		859EB5401F4F35E900F17A06 /* WorldTrotterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrotterUITests.swift; sourceTree = "<group>"; };
 		859EB5421F4F35E900F17A06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		859EB5541F4F5C2A00F17A06 /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				859EB5201F4F35E900F17A06 /* AppDelegate.swift */,
-				859EB5221F4F35E900F17A06 /* ViewController.swift */,
 				859EB5241F4F35E900F17A06 /* Main.storyboard */,
 				859EB5271F4F35E900F17A06 /* Assets.xcassets */,
 				859EB5291F4F35E900F17A06 /* LaunchScreen.storyboard */,
 				859EB52C1F4F35E900F17A06 /* Info.plist */,
+				859EB5541F4F5C2A00F17A06 /* ConversionViewController.swift */,
 			);
 			path = WorldTrotter;
 			sourceTree = "<group>";
@@ -262,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				859EB5231F4F35E900F17A06 /* ViewController.swift in Sources */,
+				859EB5551F4F5C2A00F17A06 /* ConversionViewController.swift in Sources */,
 				859EB5211F4F35E900F17A06 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
