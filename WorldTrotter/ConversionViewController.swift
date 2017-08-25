@@ -55,7 +55,7 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         if actualTimeHour >= 19 {
             self.view.backgroundColor = UIColor.black.withAlphaComponent(1.0)
         } else {
-            self.view.backgroundColor = UIColor.gray.withAlphaComponent(0.2)
+            self.view.backgroundColor = UIColor.white.withAlphaComponent(0.2)
         }
     }
     
