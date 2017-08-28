@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8584FBD11F50F1490023E51C /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584FBD01F50F1490023E51C /* BrowserViewController.swift */; };
 		859EB5211F4F35E900F17A06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859EB5201F4F35E900F17A06 /* AppDelegate.swift */; };
 		859EB5261F4F35E900F17A06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859EB5241F4F35E900F17A06 /* Main.storyboard */; };
 		859EB5281F4F35E900F17A06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 859EB5271F4F35E900F17A06 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8584FBD01F50F1490023E51C /* BrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 		859EB51D1F4F35E900F17A06 /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		859EB5201F4F35E900F17A06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		859EB5251F4F35E900F17A06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				859EB52C1F4F35E900F17A06 /* Info.plist */,
 				859EB5541F4F5C2A00F17A06 /* ConversionViewController.swift */,
 				859EB5591F4FDBA600F17A06 /* MapViewController.swift */,
+				8584FBD01F50F1490023E51C /* BrowserViewController.swift */,
 			);
 			path = WorldTrotter;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				859EB5551F4F5C2A00F17A06 /* ConversionViewController.swift in Sources */,
+				8584FBD11F50F1490023E51C /* BrowserViewController.swift in Sources */,
 				859EB55A1F4FDBA600F17A06 /* MapViewController.swift in Sources */,
 				859EB5211F4F35E900F17A06 /* AppDelegate.swift in Sources */,
 			);
@@ -532,6 +536,7 @@
 				859EB5471F4F35E900F17A06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		859EB5481F4F35E900F17A06 /* Build configuration list for PBXNativeTarget "WorldTrotterTests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +545,7 @@
 				859EB54A1F4F35E900F17A06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		859EB54B1F4F35E900F17A06 /* Build configuration list for PBXNativeTarget "WorldTrotterUITests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +554,7 @@
 				859EB54D1F4F35E900F17A06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

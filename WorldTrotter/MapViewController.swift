@@ -8,9 +8,12 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, MKMapViewDelegate {
     var mapView: MKMapView!
+    
+    var locationManager = CLLocationManager.init()
     
     override func loadView() {
         // Create a map view
@@ -59,7 +62,29 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        locationManager.requestWhenInUseAuthorization()
+        
+        mapView.delegate = self
+        
+        mapView.showsUserLocation = true
+        mapView.showsScale = true
+        mapView.showsCompass = true
+        
         print("MapViewController loaded its view.")
+    }
+    
+    @IBAction func zoomToCurrentLocation(_ sender: UIBarButtonItem) {
+        let span = MKCoordinateSpan.init(latitudeDelta: 0.0075, longitudeDelta: 0.0075)
+        let region = MKCoordinateRegion.init(center: (locationManager.location?.coordinate)!, span: span)
+        mapView.setRegion(region, animated: true)
+    }
+    
+    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
+        mapView .setCenter(userLocation.coordinate, animated: true)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
     
 }

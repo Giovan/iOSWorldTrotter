@@ -76,17 +76,24 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         let components = string.components(separatedBy: inverseSet)
         let filtered = components.joined(separator: "")
         
-        return string == filtered
+        let currentLocale = Locale.current
+        let decimalSeparator = currentLocale.decimalSeparator ?? "."
+        
+        let existingTextHasDecimalSeparator = textField.text?.range(of: decimalSeparator)
+        let replacementTextHasDecimalSeparator = string.range(of: decimalSeparator)
+        
+        //return string == filtered
         
         /*let existingTextHasDecimalSeparator = textField.text?.range(of: ".")
-        let replacementTextHasDecimalSeparator = string.range(of: ".")
+        let replacementTextHasDecimalSeparator = string.range(of: ".")*/
         
         if existingTextHasDecimalSeparator != nil,
             replacementTextHasDecimalSeparator != nil {
             return false
         } else {
-            return true
-        }*/
+            //return true
+            return string == filtered
+        }
     }
     
     func updateCelsiusLabel() {
@@ -98,8 +105,11 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func fahrenheitFieldEditingChanged(_ textField: UITextField) {
-        if let text = textField.text, let value = Double(text) {
-            fahrenheitValue = Measurement(value: value, unit: .fahrenheit)
+        //if let text = textField.text, let value = Double(text) {
+            //fahrenheitValue = Measurement(value: value, unit: .fahrenheit)
+        
+        if let text = textField.text, let number = numberFormatter.number(from: text) {
+            fahrenheitValue = Measurement(value: number.doubleValue, unit: .fahrenheit)
         } else {
             fahrenheitValue = nil
         }
